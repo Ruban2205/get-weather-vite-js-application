@@ -5,33 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Get Weather</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- Boxicon cdn -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-    <section id="home">
-         
-    </section>
-
     <section id="wrapper">
-        <header><i class="bx bx-left-arrow-alt"></i>Get Weather</header>
+        <!-- Card Starts -->
+        <header><i class='bx bx-left-arrow-alt'></i>Get Weather</header>
 
+        <!-- Input Section to handle inputs -->
         <section class="inputs">
-            <p class="info-txt pending">Please enter a valid city name!</p>
+            <p class="info-txt">Please enter a valid city name!</p>
             <input type="text" name="" id="" placeholder="Enter a City Name:" spellcheck="false" required>
- 
+
             <div class="separator"></div>
             <button>Get Device Location</button>
         </section>
+
+        <!-- Weather section -->
+        <section class="weather-part">
+            <img src="assets/icons/cloud.svg" alt="weather-icon">
+
+            <div class="temp">
+                <span class="number">13</span>
+                <span class="degree">&#176;</span>C
+            </div>
+
+            <div class="weather">Broken Clouds</div>
+
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span>Tirunelveli, TamilNadu</span>
+            </div>
+
+            <div class="bottom-deatils">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="number">13</span>
+                            <span class="deg">&#176;</span>C
+                        </div>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                        <span class="number">84%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </section>
 
 </body>

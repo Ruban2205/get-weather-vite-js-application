@@ -39,10 +39,14 @@ header i {
 }
 
 #wrapper .inputs {
+    display: none;
     margin: 20px 25px 30px;
 }
 
+
+/* Information Text */
 .inputs .info-txt {
+    display: none;
     font-size: 17px;
     text-align: center;
     padding: 12px 10px;
@@ -51,12 +55,14 @@ header i {
 }
 
 .info-txt.error {
+    display: block;
     background: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
 
-.info-txt.pending{
+.info-txt.pending {
+    display: block;
     color: #0c5460;
     background: #d1ecf1;
     border: 1px solid #bee5eb;
@@ -76,10 +82,11 @@ header i {
     border: 1px solid #bfbfbf;
 }
 
-.inputs input:is(:focus, :valid){
+.inputs input:is(:focus, :valid) {
     border: 2px solid #43affc;
 }
 
+/* Seperator (or) Line */
 .inputs .separator {
     height: 1px;
     width: 100%;
@@ -98,8 +105,20 @@ header i {
     background: #fff;
 }
 
+/* Get Device Location Button */
 .inputs button {
     color: #fff;
     cursor: pointer;
     background: aqua;
 }
+
+
+/* Weather part */
+.wrapper .weather-part{
+    margin: 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
