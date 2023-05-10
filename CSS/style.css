@@ -16,13 +16,13 @@ body {
     background-color: aqua;
 }
 
-#wrapper {
+.wrapper {
     width: 400px;
     border-radius: 7px;
     background: #fff;
 }
 
-#wrapper header {
+.wrapper header {
     color: aqua;
     font-size: 21px;
     font-weight: 500;
@@ -34,19 +34,19 @@ body {
 
 header i {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 0px;
     margin-right: 8px;
 }
 
-#wrapper .active header{
+.wrapper.active header i{
     font-size: 30px;
     margin-left: 5px;
 }
-#wrapper .inputs {
+.wrapper .inputs {
     /* display: none; */
     margin: 20px 25px 30px;
 }
-#wrapper.active .inputs{
+.wrapper.active .inputs{
     display: none;
 }
 
@@ -121,16 +121,16 @@ header i {
 
 
 /* Weather part */
-#wrapper .weather-part{
+.wrapper .weather-part{
     margin: 30px 0 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#wrapper.active .weather-part{
-    display: none;
+.wrapper.active .weather-part{
+    display: flex;
 }
 
 .weather-part img{
