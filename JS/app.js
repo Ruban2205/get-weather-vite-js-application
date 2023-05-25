@@ -11,7 +11,10 @@ inputField.addEventListener("keyup", e => {
     }
 });
 
+// Getting Openweathermap API Key From the config.js file
+var API_KEY = config.KEY; 
+
 // Function to request API service
 function requestApi(city) {
-    console.log(city);
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={apiKey}`;
 }
