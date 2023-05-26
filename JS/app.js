@@ -1,7 +1,6 @@
 // Getting Openweathermap API Key From the config.js file
 var API_KEY = config.KEY; 
 
-var apiKey = process.env.api_key;
 
 const wrapper = document.querySelector(".wrapper"),
     inputPart = wrapper.querySelector(".inputs"),
