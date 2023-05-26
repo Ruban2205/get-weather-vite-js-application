@@ -8,22 +8,38 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --primary: #19A7CE; 
+    --secondary: #AFD3E2; 
+    --dark: #146C94; 
+    --light: #F6F1F1; 
+
+    --error-primary: #f5c6cb;
+    --error-secondary: #f8d7da; 
+    --error-dark: #721c24; 
+
+    --pending-primary: #bee5eb;
+    --pending-secondary: #d1ecf1;
+    --pending-dark: #0c5460; 
+
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: aqua;
+    background-color: var(--primary);
 }
 
 .wrapper {
     width: 400px;
     border-radius: 7px;
-    background: #fff;
+    background: var(--light);
 }
 
 .wrapper header {
-    color: aqua;
+    color: var(--primary);
     font-size: 21px;
     font-weight: 500;
     padding: 16px 15px;
@@ -65,16 +81,16 @@ header i {
 
 .info-txt.error {
     display: block;
-    background: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    background: var(--error-dark);
+    background: var(--error-secondary);
+    border: 1px solid var(--error-primary);
 }
 
 .info-txt.pending {
     display: block;
-    color: #0c5460;
-    background: #d1ecf1;
-    border: 1px solid #bee5eb;
+    color: var(--pending-dark);
+    background: var(--pending-secondary);
+    border: 1px solid var(--pending-primary);
 }
 
 .inputs :where(input, button) {
@@ -92,7 +108,7 @@ header i {
 }
 
 .inputs input:is(:focus, :valid) {
-    border: 2px solid #43affc;
+    border: 2px solid var(--primary);
 }
 
 /* Seperator (or) Line */
@@ -118,7 +134,7 @@ header i {
 .inputs button {
     color: #fff;
     cursor: pointer;
-    background: aqua;
+    background: var(--primary);
 }
 
 
@@ -194,7 +210,7 @@ header i {
 }
 
 .column i {
-    color: #43affc;
+    color: var(--primary);
     font-size: 40px;
 }
 
