@@ -16,6 +16,11 @@ To run the development server:
 npm run dev
 ```
 
+To Build the app run this command: 
+```
+npm run build
+```
+
 Example of `.env` file 
 ```
 VITE_KEY='YOUR_API_KEY'
