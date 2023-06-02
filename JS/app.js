@@ -5,19 +5,28 @@ const wrapper = document.querySelector(".wrapper"),
     inputPart = wrapper.querySelector(".inputs"),
     infoTxt = inputPart.querySelector(".info-txt"),
     inputField = inputPart.querySelector("input"),
-    locationBtn = inputPart.querySelector("button"),
+    // locationBtn = inputPart.querySelector("button"),
     wIcon = document.querySelector(".weather-part img"),
     leftArrow = wrapper.querySelector("header i"); 
+
+const locationBtn = document.getElementById("get-location"); 
+const weatherBtn = document.getElementById("get-weather")
 
 let api; 
 
 // Getting input from the user
-inputField.addEventListener("keyup", e => {
-    // If user pressed the enter button and the input value is not empty
-    if (e.key == "Enter" && inputField.value != "") {
-        requestApi(inputField.value);   
+// inputField.addEventListener("keyup", e => {
+//     // If user pressed the enter button and the input value is not empty
+//     if (e.key == "Enter" && inputField.value != "") {
+//         requestApi(inputField.value);
+//     }
+// });
+
+weatherBtn.addEventListener("click", () => {
+    if (inputField.value != "") {
+        requestApi(inputField.value); 
     }
-});
+}); 
 
 locationBtn.addEventListener("click", () => {
     if (navigator.geolocation) { // If browser support geolocation api
