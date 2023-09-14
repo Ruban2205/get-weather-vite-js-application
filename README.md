@@ -1,4 +1,4 @@
-# Get Weather - Web application
+# Get Weather - Vite.js application
 
 
 To get started 
