@@ -9,18 +9,18 @@
 }
 
 :root {
-    --primary: #19A7CE;
-    --secondary: #AFD3E2;
-    --dark: #146C94;
+    --primary: #343a40;
+    --secondary: #ff5e57;
+    --dark: #343a40;
     --light: #F6F1F1;
 
     --error-primary: #f5c6cb;
     --error-secondary: #f8d7da;
     --error-dark: #721c24;
 
-    --pending-primary: #bee5eb;
-    --pending-secondary: #d1ecf1;
-    --pending-dark: #0c5460;
+    --pending-primary: #ff5e57;
+    --pending-secondary: #fc8e89;
+    --pending-dark: #ff4a40;
 
 }
 
