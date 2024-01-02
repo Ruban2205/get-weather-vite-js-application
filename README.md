@@ -29,6 +29,8 @@
 [twitter-url]: https://x.com/Rubangino
 
 
+Introducing my weather application powered by OpenWeather Map, your go-to source for accurate and up-to-date weather information. Stay ahead of the elements with real-time forecasts, current conditions, and detailed insights for your location and beyond. Explore an intuitive interface that provides hourly and daily forecasts, temperature trends, and precipitation data, ensuring you're prepared for whatever Mother Nature has in store. With our user-friendly design and reliable OpenWeather Map integration, this app makes staying informed about the weather effortlessly convenient. Download now and experience weather forecasting at your fingertips!
+
 To get started 
 ```
 git clone https://github.com/Ruban2205/Get_weather_Web_app.git
